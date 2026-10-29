@@ -1,0 +1,21 @@
+# Credentials and environment variables
+.env
+.env.*
+!.env.example
+*service-account*.json
+*credentials*.json
+
+# Python environments
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Generated and private data
+data/processed/
+*.log
+
+# Editor and OS files
+.vscode/
+.DS_Store
