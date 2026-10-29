@@ -220,24 +220,6 @@ The automation supports scheduled execution and manual execution through GitHub 
 
 **Automation behavior:** A new Google Form response is collected immediately in Google Sheets, but the ETL and Azure pipeline process it on the next scheduled run or manual workflow trigger. The current implementation does not use an instant form-submission trigger.
 
-### GitHub Actions Schedule
-
-The configured cron expression is:
-
-```yaml
-schedule:
-  - cron: "30 15 * * *"
-```
-
-This runs at 15:30 UTC.
-
-In Riga, Latvia, that corresponds to:
-
-- 17:30 during winter time
-- 18:30 during summer time
-
-GitHub Actions scheduled jobs may experience execution delays.
-
 ## FastAPI Backend
 
 The FastAPI backend provides survey data, statistical insights, AI insights, and pipeline-related endpoints.
@@ -299,8 +281,6 @@ python -m streamlit run app/dashboard.py
 Open the dashboard:
 
 http://localhost:8501
-
-**Note:** A separate root-level `dashboard.py` may exist in the repository, but `app/dashboard.py` is the confirmed working Streamlit entry point.
 
 ## Google Gemini AI Integration
 
