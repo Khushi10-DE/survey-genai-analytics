@@ -33,7 +33,16 @@ def analyze_feedback_with_gemini(responses):
             "recommendations": [],
         }
 
-    client = genai.Client(api_key=api_key)
+    client = genai.Client(api_key=api_key,
+                http_options=types.HttpOptions(
+        timeout=20000,  # 20 seconds, in milliseconds
+        retry_options=types.HttpRetryOptions(
+            attempts=2,
+            initial_delay=1.0,
+            max_delay=3.0,
+        ),
+    ),
+    )
 
     prompt = f"""
 Analyze the following fictional employee survey feedback.
