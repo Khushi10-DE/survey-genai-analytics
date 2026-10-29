@@ -326,18 +326,9 @@ survey-genai-analytics/
 │
 ├── .env
 ├── .gitignore
-├── dashboard.py
 ├── README.md
 ├── requirements.txt
-└── test_google_sheets.py
 ```
-
-**Notes:**
-
-- `.env` is a local configuration file and must not be committed.
-- `.venv`, `__pycache__`, and `.pytest_cache` are local environment/cache directories and are omitted from the structure.
-- The root-level `dashboard.py` is listed because it currently exists; it is not the confirmed Streamlit entry point.
-- Generated ETL output files should be excluded from Git when appropriate.
 
 ## Local Installation
 
