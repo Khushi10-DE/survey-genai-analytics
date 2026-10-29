@@ -4,7 +4,8 @@ name: Automated Survey Data Pipeline
 on:
   schedule:
     # Daily at 15:40 UTC
-    - cron: "40 13 29 10 *" 
+    - cron: "40 13 * * *"
+      timezone: "Europe/Riga" 
   workflow_dispatch:
 
 permissions:
