@@ -11,3 +11,4 @@ google-genai==2.33.0
 google-api-python-client==2.201.0
 azure-identity==1.27.0
 azure-storage-file-datalake==12.26.0
+python-dotenv==1.2.4
