@@ -295,20 +295,6 @@ The analysis includes:
 
 The application sends survey feedback to the Gemini API and displays the returned insights in Streamlit.
 
-### Handling Gemini API Quotas
-
-Gemini API free-tier limits can cause an error such as:
-
-```text
-429 RESOURCE_EXHAUSTED
-```
-
-The dashboard handles Gemini API failures by displaying statistical fallback insights instead of breaking the user interface.
-
-The fallback uses survey ratings and categories to provide a basic summary and recommendations.
-
-Fallback results are clearly identified as statistical analysis rather than AI-generated content.
-
 ## Project Structure
 
 ```text
