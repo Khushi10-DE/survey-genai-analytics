@@ -490,23 +490,6 @@ flowchart LR
     F --> G["Analytics CSV"]
 ```
 
-### Testing Checklist
-
-- [x] Google Form submission
-- [x] Google Sheets data collection
-- [x] Python data extraction
-- [x] ETL cleaning and validation
-- [x] Cleaned and invalid data outputs
-- [x] Data quality report generation
-- [x] Azure Data Lake upload
-- [x] Azure Data Factory execution
-- [x] GitHub Actions automation
-- [x] FastAPI functionality
-- [x] Streamlit dashboard
-- [x] Gemini AI integration
-- [x] Statistical fallback
-- [x] Python automated tests
-
 ## Security
 
 The project uses the following security practices:
@@ -529,15 +512,6 @@ Azure Data Lake Storage Gen2 and Azure Data Factory may incur charges depending 
 
 Gemini free-tier requests are subject to API quotas.
 
-Recommended practices:
-
-- Use small test datasets.
-- Avoid unnecessary pipeline runs.
-- Monitor Azure costs.
-- Review GitHub Actions schedules.
-- Delete unused cloud resources when no longer needed.
-- Avoid enabling paid Gemini billing unless required.
-
 ## Project Screenshots
 
 Screenshots can be added under:
@@ -546,7 +520,7 @@ Screenshots can be added under:
 docs/screenshots/
 ```
 
-Recommended screenshots:
+Screenshots:
 
 1. Google Form and sample responses
 2. Successful GitHub Actions workflow
@@ -554,40 +528,6 @@ Recommended screenshots:
 4. Successful Azure Data Factory pipeline
 5. Streamlit dashboard with survey charts
 6. Gemini AI insights or statistical fallback
-
-Screenshots should use fictional data and must not expose credentials or private information.
-
-## Challenges and Solutions
-
-### Google Sheets Authentication
-
-**Challenge:** Securely accessing Google Sheets from local Python and GitHub Actions.
-
-**Solution:** Configured Google Cloud service account authentication and granted spreadsheet access.
-
-### Azure Authentication
-
-**Challenge:** Allowing GitHub Actions to access Azure without interactive login.
-
-**Solution:** Configured Microsoft Entra ID federated credentials and GitHub OIDC.
-
-### Pipeline Automation
-
-**Challenge:** Running ETL, Azure uploads, and ADF orchestration in the correct sequence.
-
-**Solution:** Developed `app/automation.py` to execute ETL, upload processed files, trigger ADF, and monitor the pipeline result.
-
-### Gemini Quota Limits
-
-**Challenge:** Gemini API requests may fail due to free-tier quota exhaustion or temporary errors.
-
-**Solution:** Implemented a statistical fallback in Streamlit to keep the dashboard usable.
-
-### Reliable Testing
-
-**Challenge:** Testing API functionality without requiring live cloud services.
-
-**Solution:** Used Pytest and mocked survey data to validate selected API behavior.
 
 ## Skills Demonstrated
 
@@ -623,7 +563,6 @@ Screenshots should use fictional data and must not expose credentials or private
 
 - Git and GitHub
 - Python project organization
-- Environment variable management
 - Secure credential handling
 - Pytest
 - CI workflows
@@ -640,11 +579,8 @@ Potential future improvements include:
 - Hosting FastAPI and Streamlit in the cloud
 - Gemini response caching
 - Azure cost alerts and monitoring
-- Expanded automated tests
 
 ## Project Status
-
-**Completed and End-to-End Tested**
 
 The project successfully demonstrates an automated data engineering workflow from survey collection through Azure analytics-ready storage.
 
