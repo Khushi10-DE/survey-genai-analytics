@@ -506,17 +506,15 @@ The project uses the following security practices:
 
 ## Project Screenshots
 
-## Project Screenshots
-
-The following screenshots show the implemented pipeline, cloud resources, and analytics dashboard.
+The following screenshots show the working data pipeline, Azure resources, and analytics dashboard.
 
 | Component | Description | Screenshot |
 |---|---|---|
-| GitHub Actions | Successful automated ETL and Azure pipeline execution | [View Screenshot](docs/screenshots/github-actions.png) |
-| Azure Data Lake Gen2 | Processed survey files and analytics folder | [View Screenshot](docs/screenshots/azure-data-lake.png) |
-| Azure Data Factory | Successful `pl_survey_cleaned_to_analytics` pipeline run | [View Screenshot](docs/screenshots/adf-pipeline.png) |
-| Streamlit Dashboard | Survey metrics, charts, and feedback analysis | [View Screenshot](docs/screenshots/streamlit-dashboard.png) |
-| Gemini AI Insights | AI-generated insights or statistical fallback | [View Screenshot](docs/screenshots/gemini-insights.png) |
+| GitHub Actions | Successful automated pipeline execution | [View Screenshot](docs/screenshots/github-actions.jpeg) |
+| Azure Data Lake Gen2 | Processed files and analytics folder | [View Screenshot](docs/screenshots/azure-data-lake.jpeg) |
+| Azure Data Factory | Successful ADF pipeline execution | [View Screenshot](docs/screenshots/adf-pipeline.jpeg) |
+| Streamlit Dashboard | Survey metrics and visualizations | [View Screenshot](docs/screenshots/streamlit-dashboard.jpeg) |
+| Gemini AI Insights | AI-generated insights or statistical fallback | [View Screenshot](docs/screenshots/gemini-insights.jpeg) |
 
 ## Skills Demonstrated
 
