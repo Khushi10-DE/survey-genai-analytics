@@ -504,30 +504,19 @@ The project uses the following security practices:
 - Use fictional/test data for portfolio demonstrations.
 - Avoid exposing credentials or personal information in screenshots.
 
-## Cost Considerations
-
-The project was designed with attention to cloud costs.
-
-Azure Data Lake Storage Gen2 and Azure Data Factory may incur charges depending on usage.
-
-Gemini free-tier requests are subject to API quotas.
+## Project Screenshots
 
 ## Project Screenshots
 
-Screenshots can be added under:
+The following screenshots show the implemented pipeline, cloud resources, and analytics dashboard.
 
-```text
-docs/screenshots/
-```
-
-Screenshots:
-
-1. Google Form and sample responses
-2. Successful GitHub Actions workflow
-3. Azure Data Lake folder structure
-4. Successful Azure Data Factory pipeline
-5. Streamlit dashboard with survey charts
-6. Gemini AI insights or statistical fallback
+| Component | Description | Screenshot |
+|---|---|---|
+| GitHub Actions | Successful automated ETL and Azure pipeline execution | [View Screenshot](docs/screenshots/github-actions.png) |
+| Azure Data Lake Gen2 | Processed survey files and analytics folder | [View Screenshot](docs/screenshots/azure-data-lake.png) |
+| Azure Data Factory | Successful `pl_survey_cleaned_to_analytics` pipeline run | [View Screenshot](docs/screenshots/adf-pipeline.png) |
+| Streamlit Dashboard | Survey metrics, charts, and feedback analysis | [View Screenshot](docs/screenshots/streamlit-dashboard.png) |
+| Gemini AI Insights | AI-generated insights or statistical fallback | [View Screenshot](docs/screenshots/gemini-insights.png) |
 
 ## Skills Demonstrated
 
