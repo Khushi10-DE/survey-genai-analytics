@@ -495,16 +495,16 @@ The following screenshots demonstrate the automated data pipeline, Azure resourc
 
 | Component | Description | Screenshot |
 |---|---|---|
-| GitHub Actions | Successful automated Python ETL and Azure pipeline execution | [View Screenshot](docs/screenshots/github-actions.png) |
-| Azure Data Lake Gen2 | Processed datasets and analytics-ready files | [View Screenshot](docs/screenshots/azure-data-lake.png) |
-| Azure Data Factory | Successful ADF pipeline execution | [View Screenshot](docs/screenshots/adf-pipeline.png) |
-| Azure Monitor | Successful pipeline alert triggered | [View Screenshot](docs/screenshots/success-alert.png) |
-| Azure Monitor | Failed pipeline alert triggered | [View Screenshot](docs/screenshots/failure-alert.png) |
-| Success Email | Email notification received after successful pipeline execution | [View Screenshot](docs/screenshots/success-email.png) |
-| Failure Email | Email notification received after failed pipeline execution | [View Screenshot](docs/screenshots/failure-email.png) |
-| ADF Failure Test | Failed Copy activity during controlled failure testing | [View Screenshot](docs/screenshots/adf-failure.png) |
-| Streamlit Dashboard | Interactive survey analytics and visualizations | [View Screenshot](docs/screenshots/streamlit-dashboard.png) |
-| Gemini AI Insights | AI-generated feedback summaries, sentiment, themes, and recommendations | [View Screenshot](docs/screenshots/gemini-insights.png) |
+| GitHub Actions | Successful automated Python ETL and Azure pipeline execution | [View Screenshot](docs/Screenshots/github-actions.png) |
+| Azure Data Lake Gen2 | Processed datasets and analytics-ready files | [View Screenshot](docs/Screenshots/azure-data-lake.png) |
+| Azure Data Factory | Successful ADF pipeline execution | [View Screenshot](docs/Screenshots/adf-pipeline.png) |
+| Azure Monitor | Successful pipeline alert triggered | [View Screenshot](docs/Screenshots/success-alert.png) |
+| Azure Monitor | Failed pipeline alert triggered | [View Screenshot](docs/Screenshots/failure-alert.png) |
+| Success Email | Email notification received after successful pipeline execution | [View Screenshot](docs/Screenshots/success-email.png) |
+| Failure Email | Email notification received after failed pipeline execution | [View Screenshot](docs/Screenshots/failure-email.png) |
+| ADF Failure Test | Failed Copy activity during controlled failure testing | [View Screenshot](docs/Screenshots/adf-failure.png) |
+| Streamlit Dashboard | Interactive survey analytics and visualizations | [View Screenshot](docs/Screenshots/streamlit-dashboard.png) |
+| Gemini AI Insights | AI-generated feedback summaries, sentiment, themes, and recommendations | [View Screenshot](docs/Screenshots/gemini-insights.png) |
 
 ## Skills Demonstrated
 
