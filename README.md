@@ -496,7 +496,7 @@ The following screenshots demonstrate the automated data pipeline, Azure resourc
 | Component | Description | Screenshot |
 |---|---|---|
 | GitHub Actions | Successful automated Python ETL and Azure pipeline execution | [View Screenshot](docs/Screenshots/github-actions.png) |
-| Azure Data Lake Gen2 | Processed datasets and analytics-ready files | [View Screenshot](docs/Screenshots/azure-data-lake.png) |
+| Azure Data Lake Gen2 | Processed datasets and analytics-ready files | [View Screenshot](docs/Screenshots/Azure-data-lake.png) |
 | Azure Data Factory | Successful ADF pipeline execution | [View Screenshot](docs/Screenshots/adf-pipeline.png) |
 | Azure Monitor | Successful pipeline alert triggered | [View Screenshot](docs/Screenshots/success-alert.png) |
 | Azure Monitor | Failed pipeline alert triggered | [View Screenshot](docs/Screenshots/failure-alert.png) |
