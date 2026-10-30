@@ -334,12 +334,10 @@ survey-genai-analytics/
 
 ### Prerequisites
 
-- Python
-- Git
+- Python and Git
 - VS Code or another Python editor
-- Google Cloud service account
-- Access to the survey Google Sheet
-- Azure resources and appropriate permissions
+- Google Cloud service account with access to the survey spreadsheet
+- Azure access and permissions for cloud pipeline execution
 - Gemini API key for AI insights
 
 ### Step 1: Clone the Repository
@@ -426,29 +424,11 @@ The automated cloud pipeline uses GitHub repository secrets.
 
 Azure authentication uses Microsoft Entra ID and GitHub OIDC.
 
-This avoids storing a long-lived Azure client secret in GitHub.
-
 Google service account credentials are provided securely through GitHub Actions secrets.
 
 ## Testing and Validation
 
 The project has been tested at the API level and through the complete cloud pipeline.
-
-### 1. Automated Python Tests
-
-Run:
-
-```powershell
-python -m pytest -q tests/
-```
-
-Latest confirmed result:
-
-```text
-3 passed, 2 warnings in 10.33s
-```
-
-The two warnings did not cause test failures.
 
 The tests cover selected FastAPI and statistical analysis functionality.
 
@@ -459,7 +439,6 @@ The CI workflow is defined in:
 ```text
 .github/workflows/ci.yml
 ```
-
 It installs project dependencies and executes the Python tests.
 
 The CI workflow has previously completed successfully.
@@ -477,6 +456,12 @@ The complete pipeline was tested by:
 7. Checking the final analytics output.
 
 The complete workflow was confirmed working.
+
+### Monitoring Tests
+
+Azure Monitor notifications were tested for both successful and failed ADF pipeline runs.
+
+The success email was received after a successful run. The failure email was received after a deliberately failed Copy activity.
 
 ### End-to-End Test Flow
 
@@ -506,15 +491,20 @@ The project uses the following security practices:
 
 ## Project Screenshots
 
-The following screenshots show the working data pipeline, Azure resources, and analytics dashboard.
+The following screenshots demonstrate the automated data pipeline, Azure resources, monitoring alerts, and GenAI analytics dashboard.
 
 | Component | Description | Screenshot |
 |---|---|---|
-| GitHub Actions | Successful automated pipeline execution | [View Screenshot](docs/screenshots/github-actions.png) |
-| Azure Data Lake Gen2 | Processed files and analytics folder | [View Screenshot](docs/screenshots/azure-data-lake.png) |
+| GitHub Actions | Successful automated Python ETL and Azure pipeline execution | [View Screenshot](docs/screenshots/github-actions.png) |
+| Azure Data Lake Gen2 | Processed datasets and analytics-ready files | [View Screenshot](docs/screenshots/azure-data-lake.png) |
 | Azure Data Factory | Successful ADF pipeline execution | [View Screenshot](docs/screenshots/adf-pipeline.png) |
-| Streamlit Dashboard | Survey metrics and visualizations | [View Screenshot](docs/screenshots/streamlit-dashboard.png) |
-| Gemini AI Insights | AI-generated insights or statistical fallback | [View Screenshot](docs/screenshots/gemini-insights.png) |
+| Azure Monitor | Successful pipeline alert triggered | [View Screenshot](docs/screenshots/success-alert.png) |
+| Azure Monitor | Failed pipeline alert triggered | [View Screenshot](docs/screenshots/failure-alert.png) |
+| Success Email | Email notification received after successful pipeline execution | [View Screenshot](docs/screenshots/success-email.png) |
+| Failure Email | Email notification received after failed pipeline execution | [View Screenshot](docs/screenshots/failure-email.png) |
+| ADF Failure Test | Failed Copy activity during controlled failure testing | [View Screenshot](docs/screenshots/adf-failure.png) |
+| Streamlit Dashboard | Interactive survey analytics and visualizations | [View Screenshot](docs/screenshots/streamlit-dashboard.png) |
+| Gemini AI Insights | AI-generated feedback summaries, sentiment, themes, and recommendations | [View Screenshot](docs/screenshots/gemini-insights.png) |
 
 ## Skills Demonstrated
 
@@ -557,34 +547,20 @@ The following screenshots show the working data pipeline, Azure resources, and a
 ## Future Enhancements
 
 Potential future improvements include:
-
 - Triggering the pipeline immediately after each survey submission
 - Incremental processing of only new survey responses
 - Additional automated data quality checks
 - Historical survey trend analysis
 - Power BI integration
 - Hosting FastAPI and Streamlit in the cloud
-- Gemini response caching
-- Azure cost alerts and monitoring
 
 ## Project Status
 
-The project successfully demonstrates an automated data engineering workflow from survey collection through Azure analytics-ready storage.
+The Python ETL, automated Azure data pipeline, FastAPI backend, Streamlit dashboard, and Gemini integration are implemented.
 
-The current implementation includes:
+The end-to-end pipeline has been tested successfully, and Azure Monitor email notifications have been verified for both successful and failed ADF executions.
 
-- Google Forms and Google Sheets integration
-- Python ETL and data quality validation
-- Azure Data Lake Storage Gen2
-- Azure Data Factory orchestration
-- GitHub Actions scheduled automation
-- FastAPI analytics endpoints
-- Streamlit visualizations
-- Gemini AI insights
-- Statistical fallback
-- Automated Python tests
-
-The cloud data pipeline runs through GitHub Actions and Azure. The analytics application currently runs locally.
+The cloud pipeline runs through GitHub Actions and Azure. The analytics application currently runs locally.
 
 ## Repository
 
